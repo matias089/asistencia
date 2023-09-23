@@ -1,0 +1,52 @@
+<ion-header [translucent]="true" class="background">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/img/Duoc3.png" class="img-duoc preeuba"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="m-t">
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input [(ngModel)]="formRegister.nombre" type="text" placeholder="Ej: Juan" position="floating"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input [(ngModel)]="formRegister.apellido"type="text" placeholder="Ej: Monsalvez"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input [(ngModel)]="formRegister.nameUsuario" type="email" placeholder="Ej: juan123"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="formRegister.password" type="password" placeholder="Ej: Contraseña123"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-grid fixed="true">
+    <ion-row>
+      <ion-col  class="centrar">
+          <ion-button (click)="register()" ion-button color="rgb(178, 234, 236)" class="log-btn">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

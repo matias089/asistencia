@@ -1,0 +1,60 @@
+<ion-header [translucent]="true" class="background">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="6">
+        <ion-img src="assets/img/Duoc3.png" class="img-duoc preubaa"></ion-img>
+      </ion-col>
+      <ion-col size="6">
+        <ion-img src="assets/img/ECA.png" class="img-eca preubaa"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input [(ngModel)]="formLogin.usuario" type="text" placeholder="Ej: Juan123" value="{{datosReg}}"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="formLogin.password" type="password" placeholder="Ej: Contraseña123"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div>
+    <ion-grid fixed="true">
+      <ion-row>
+        <ion-col  class="centrar">
+            <ion-button (click)="login()" ion-button color="rgb(178, 234, 236)" class="log-btn">Iniciar sesión</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="centrar m-a">
+      <a [routerLink]="['/r-password']" href="">¿Olvidaste tu contraseña?</a>
+    </div>
+    <hr>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="btn-b">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="centrar psreuba">
+          <ion-button [routerLink]="['/register']" ion-button color="rgb(156, 120, 221)" class="reg-btn">Crear cuenta nueva</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-footer>
+
+<div>
+  <ion-alert [isOpen]="isAlertOpen" header="Alert" subHeader="Important message" message="This is an alert!" [buttons]="alertButtons" (didDismiss)="setOpen(true)"></ion-alert>
+</div>

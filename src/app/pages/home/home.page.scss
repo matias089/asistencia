@@ -1,0 +1,26 @@
+.img-HM{
+  clip-path: circle();
+  width: 50px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  background-color: rgb(137, 176, 250);
+}
+
+ion-header{
+  box-shadow: none;
+}
+
+ion-menu-button{
+  float: left;
+}
+
+.btn-perfil{
+  --background: none;
+  --border-color: transparent;
+  --background-activated: none;
+  float: right;
+  --box-shadow: none;
+  --border: none;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}

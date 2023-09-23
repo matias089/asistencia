@@ -1,0 +1,7 @@
+{
+  "name": "attendanceMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
