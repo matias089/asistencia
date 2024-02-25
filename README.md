@@ -1,4 +1,4 @@
-# Fl studio 2024 (Crack)
+# 💥 Fl studio 2024 (Crack) 💥
 ![MainIMG](https://i.ytimg.com/vi/PLm05-nZg1o/maxresdefault.jpg)
 ## Info ℹ️
 
